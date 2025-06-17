@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чейнеш & Максим | Свадьба 29.07.2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Основные стили */
+        :root {
+            --primary-color: #d4a59a;
+            --secondary-color: #5a3e36;
+            --light-color: #fff9f9;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--light-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        a {
+            text-decoration: none;
+            color: var(--secondary-color);
+        }
+
+        /* Шапка с анимацией */
+        .header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center/cover;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .header h1 {
+            font-size: 4em;
+            margin: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .header p {
+            font-size: 1.5em;
+            margin: 20px 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        /* Кнопка */
+        .btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+            animation: pulse 2s infinite;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background: #c99589;
+        }
+
+        /* Разделы */
+        section {
+            padding: 80px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #story {
+            background: white;
+        }
+        #details {
+            background: var(--light-color);
+        }
+
+        /* Таймер */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .countdown-item {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            min-width: 70px;
+        }
+        .countdown-number {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        /* Галерея */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Форма RSVP */
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+        button[type="submit"] {
+            background: var(--secondary-color);
+            color: white;
+border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        /* Карта */
+        .map {
+            height: 400px;
+            width: 100%;
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Анимации */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5em;
+            }
+            .countdown {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка с приглашением -->
+    <div class="header">
+        <h1>Чейнеш & Максим</h1>
+        <p>29 июля 2025</p>
+        <a href="#rsvp" class="btn">Подтвердить присутствие</a>
+    </div>
+
+    <!-- Мы женимся -->
+    <section id="story">
+        <h2>Дорогие родные и друзья</h2>
+        <p>Мы рады сообщить Вам, что 29.07.2025 состоится самое главное торжество в нашей жизни - день нашей свадьбы!
+Приглашаем Вас разделить с нами радость этого незабываемого дня!</p>
+        
+  
+
+    <!-- Детали свадьбы -->
+    <section id="details">
+        <h2>Детали свадьбы</h2>
+        <p><strong>Дата:</strong> 29 июля 2025 года</p>
+<p><strong>Время:</strong> 16:00</p>
+        <p><strong>Место:</strong> Банкетный зал "White hall palace", г.Улан-Удэ ул.Балтахинова 32</p>
+        <p><strong>Дресс-код:</strong> Вечерние наряды в пастельных тонах</p>
+        
+        <!-- Таймер -->
+        <div class="countdown">
+            <div class="countdown-item">
+                <div class="countdown-number" id="days">00</div>
+                <div>дней</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="hours">00</div>
+                <div>часов</div>
+            </div>
+            <div class="countdown-item">
+                <div class="countdown-number" id="minutes">00</div>
+                <div>минут</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Карта -->
+    <section>
+        <h2>Место проведения</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.040238835636!2d107.58777858869746!3d51.82369539939965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5dafdb48dcf01b6b%3A0xbfa221aec50faacc!2z0YPQuy4g0JHQsNC70YLQsNGF0LjQvdC-0LLQsCwgMzIsINCj0LvQsNC9LdCj0LTRjSwg0KDQtdGB0L8uINCR0YPRgNGP0YLQuNGPLCA2NzAwMDA!5e0!3m2!1sru!2sru!4v1750157540187!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- RSVP форма -->
+    <section id="rsvp">
+        <h2>Подтвердите ваше присутствие</h2>
+        <form>
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш email" required>
+            <select required>
+                <option value="" disabled selected>Вы придёте?</option>
+                <option value="yes">С радостью!</option>
+                <option value="no">К сожалению, не смогу</option>
+            </select>
+            <input type="number" placeholder="Количество гостей" min="1">
+            <textarea placeholder="Пожелания или комментарии" rows="4"></textarea>
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Футер -->
+<footer style="text-align: center; padding: 20px; background: var(--secondary-color); color: white;">
+        <p>С любовью, Чейнеш & Максим</p>
+    </footer>
+
+    <!-- Скрипты -->
+    <script>
+        // Таймер обратного отсчёта
+        function updateCountdown() {
+            const weddingDate = new Date('July 29, 2025 16:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            document.getElementById('days').innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+            document.getElementById('hours').innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            document.getElementById('minutes').innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Плавная прокрутка для меню
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
